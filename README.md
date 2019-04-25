@@ -1,25 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Vincent GUEGAN & Lucas PIQUET
 
-Things you may want to cover:
+Exercice Dogsitter
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# thp_S4J4_dogsitter
+git clone
+> bundle install à la racine du projet
+> rails db:seed pour seeder avec Faker
+> rails console pour tester le projet

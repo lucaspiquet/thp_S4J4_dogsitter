@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2019_04_25_170429) do
 
   create_table "cities", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,10 +31,12 @@ ActiveRecord::Schema.define(version: 2019_04_25_170429) do
   end
 
   create_table "strolls", force: :cascade do |t|
+    t.integer "city_id"
     t.integer "dog_id"
     t.integer "dogsitter_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["city_id"], name: "index_strolls_on_city_id"
     t.index ["dog_id"], name: "index_strolls_on_dog_id"
     t.index ["dogsitter_id"], name: "index_strolls_on_dogsitter_id"
   end
